@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Banking Form - Validation</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/validation.css">
+	</head>
+	
+	<body>
+
+	<h1>Banking Form</h1>
+		<div id="form">
+			<form action="index.html" method="post">
+				<h3>Sign Up For Online Banking</h3>
+
+				<fieldset id="basic-info">
+					<legend>Your Basic Info</legend>
+						<label for="first_name">First Name:</label><br>
+						<input type="text" id="first_name" name="first_name" placeholder="First Name" required><br>
+
+						<label for="middle_initial">Middle Initial:</label><br>
+						<input type="text" id="middle_initial" name="middle_initial" required><br>
+
+						<label for="last_name">Last Name:</label><br>
+						<input type="text" id="last_name" name="last_name" placeholder="Last Name" required><br>
+
+						<label for="phone_number">Your Phone Number:<br><span id="tel-format">(format: xxx-xxx-xxxx)</span></label><br>
+						<input type="tel" id="phone_number" name="phone_number"  placeholder="xxx-xxx-xxxx" pattern="^\d{3}-\d{3}-\d{4}$" required><br>
+
+						<label for="user_email">Your Email:</label><br>
+						<input type="email" id="user_email" name="user_email" placeholder="you@example.com" required><br>
+
+						<label for="li_url">Your LinkedIn url:</label><br>
+						<input type="url" id="li_url" name="li_url" placeholder="Your LinkedIn url" required><br>						
+				</fieldset>
+
+				<fieldset id="mailing-address">
+					<legend>Your Permanent Address</legend>
+						<label for="street_address">Street Address:</label><br>
+						<input type="text" id="street_address" name="street_address" placeholder="Street Address" required><br>
+
+						<label for="suite_number">Apt or Suite Number:</label><br>
+						<input type="text" id="suite_number" name="suite_number" placeholder="Suite Number"><br>
+
+						<label for="city">City:</label><br>
+						<input type="text" id="city" name="city" placeholder="City" required><br>
+
+						<label for="state">State:</label><br>
+						<select name="state" id="state">
+							<option value="">-Select Your State-</option>
+							<option value="Alabama">Alabama</option>
+							<option value="Alaska">Alaska</option>
+							<option value="Arizona">Arizona</option>
+							<option value="Arkansas">Arkansas</option>
+							<option value="California">California</option>
+							<option value="Colorado">Colorado</option>
+							<option value="Connecticut">Connecticut</option>
+							<option value="Delaware">Delaware</option>
+							<option value="Florida">Florida</option>
+							<option value="Georgia">Georgia</option>
+							<option value="Hawaii">Hawaii</option>
+							<option value="Idaho">Idaho</option>
+							<option value="Illinois">Illinois</option>
+							<option value="Indiana">Indiana</option>
+							<option value="Iowa">Iowa</option>
+							<option value="Kansas">Kansas</option>
+							<option value="Kentucky">Kentucky</option>
+							<option value="Louisiana">Louisiana</option>
+							<option value="Maine">Maine</option>
+							<option value="Maryland">Maryland</option>
+							<option value="Massachusetts">Massachusetts</option>
+							<option value="Michigan">Michigan</option>
+							<option value="Minnesota">Minnesota</option>
+							<option value="Mississippi">Mississippi</option>
+							<option value="Missouri">Missouri</option>
+							<option value="Montana">Montana</option>
+							<option value="Nebraska">Nebraska</option>
+							<option value="Nevada">Nevada</option>
+							<option value="New Hampshire">New Hampshire</option>
+							<option value="New Jersey">New Jersey</option>
+							<option value="New Mexico">New Mexico</option>
+							<option value="New York">New York</option>
+							<option value="North Carolina">North Carolina</option>
+							<option value="North Dakota">North Dakota</option>
+							<option value="Ohio">Ohio</option>
+							<option value="Oklahoma">Oklahoma</option>
+							<option value="Oregon">Oregon</option>
+							<option value="Pennsylvania">Pennsylvania</option>
+							<option value="Rhode Island">Rhode Island</option>
+							<option value="South Carolina">South Carolina</option>
+							<option value="South Dakota">South Dakota</option>
+							<option value="Tennessee">Tennessee</option>
+							<option value="Texas">Texas</option>
+							<option value="Utah">Utah</option>
+							<option value="Vermont">Vermont</option>
+							<option value="Virginia">Virginia</option>
+							<option value="Washington">Washington</option>
+							<option value="West Virginia">West Virginia</option>
+							<option value="Wisconsin">Wisconsin</option>
+							<option value="Wyoming">Wyoming</option>
+						</select><br>
+
+						<label for="zip_code">Zip Code:</label><br>
+						<input type="text" id="zip_code" name="zip_code" placeholder="Zip Code" required><br>
+				</fieldset>
+
+				<fieldset>
+					<legend>Your Employment Info</legend>
+
+						<label for="occupation">Your Occupation:</label><br>
+						<input type="text" id="occupation" name="occupation" placeholder="Occupation" required><br>
+
+						<label for="employer">Your Employer:</label><br>
+						<input type="text" id="employer" name="employer" placeholder="Employer Name" required><br>	
+						
+						<fieldset id="emp-address">
+							<legend class="underlined">Employer Address</legend>
+								<label for="employer_street">Street Address:</label><br>
+								<input type="text" id="employer_street" name="employer_street" placeholder="Street Address" required><br>
+
+								<label for="employer_suite">Apt or Suite Number:</label><br>
+								<input type="text" id="employer_suite" name="employer_suiter" placeholder="Suite Number"><br>
+
+								<label for="employer_city">City:</label><br>
+								<input type="text" id="employer_city" name="employer_city" placeholder="City" required><br>
+
+								<label for="employer_state">State:</label><br>
+								<select name="employer_state" id="employer_state">
+									<option value="">-Select Your State-</option>
+									<option value="Alabama">Alabama</option>
+									<option value="Alaska">Alaska</option>
+									<option value="Arizona">Arizona</option>
+									<option value="Arkansas">Arkansas</option>
+									<option value="California">California</option>
+									<option value="Colorado">Colorado</option>
+									<option value="Connecticut">Connecticut</option>
+									<option value="Delaware">Delaware</option>
+									<option value="Florida">Florida</option>
+									<option value="Georgia">Georgia</option>
+									<option value="Hawaii">Hawaii</option>
+									<option value="Idaho">Idaho</option>
+									<option value="Illinois">Illinois</option>
+									<option value="Indiana">Indiana</option>
+									<option value="Iowa">Iowa</option>
+									<option value="Kansas">Kansas</option>
+									<option value="Kentucky">Kentucky</option>
+									<option value="Louisiana">Louisiana</option>
+									<option value="Maine">Maine</option>
+									<option value="Maryland">Maryland</option>
+									<option value="Massachusetts">Massachusetts</option>
+									<option value="Michigan">Michigan</option>
+									<option value="Minnesota">Minnesota</option>
+									<option value="Mississippi">Mississippi</option>
+									<option value="Missouri">Missouri</option>
+									<option value="Montana">Montana</option>
+									<option value="Nebraska">Nebraska</option>
+									<option value="Nevada">Nevada</option>
+									<option value="New Hampshire">New Hampshire</option>
+									<option value="New Jersey">New Jersey</option>
+									<option value="New Mexico">New Mexico</option>
+									<option value="New York">New York</option>
+									<option value="North Carolina">North Carolina</option>
+									<option value="North Dakota">North Dakota</option>
+									<option value="Ohio">Ohio</option>
+									<option value="Oklahoma">Oklahoma</option>
+									<option value="Oregon">Oregon</option>
+									<option value="Pennsylvania">Pennsylvania</option>
+									<option value="Rhode Island">Rhode Island</option>
+									<option value="South Carolina">South Carolina</option>
+									<option value="South Dakota">South Dakota</option>
+									<option value="Tennessee">Tennessee</option>
+									<option value="Texas">Texas</option>
+									<option value="Utah">Utah</option>
+									<option value="Vermont">Vermont</option>
+									<option value="Virginia">Virginia</option>
+									<option value="Washington">Washington</option>
+									<option value="West Virginia">West Virginia</option>
+									<option value="Wisconsin">Wisconsin</option>
+									<option value="Wyoming">Wyoming</option>
+								</select><br>
+
+								<label for="employer_zip_code">Zip:</label><br>
+								<input type="text" id="employer_zip_code" name="employer_zip_code" placeholder="Zip Code" required>
+							
+						</fieldset>		
+
+				</fieldset>
+				<fieldset>
+					<legend>Your Loan Info</legend>
+					<label for="loan-type">What Type Of Loan Would You Like?</label><br>
+								<select name="loan-type" id="loan-type">
+									<option value="">-Select Your Loan-</option>
+									<option value="Commercial">Commercial</option>
+									<option value="Real_Estate">Real Estate</option>
+									<option value="Personal">Personal</option>
+									<option value="Arkansas">Mortgage</option>
+								</select><br>
+
+								<label for="loan_amount">Loan Amount</label><br>
+								<input type="text" id="loan_amount" name="loan_amount" placeholder="Loan Amount in USD" required>
+					<fieldset class="loan-length">
+						<legend class="length-legend">Length of Loan</legend>
+							<input type="radio" name="loan-length" value="5_year" class="radio">5-year loan
+							<input type="radio" name="loan-length" value="15_year" class="radio">15-year loan
+							<input type="radio" name="loan-length" value="30_year" class="radio">30-year loan
+					</fieldset>
+					<fieldset class="loan-length">
+						<legend class="length-legend">Special Conditions</legend>
+							<input type="checkbox" name="down_payment" value="down_payment" class="radio">I have a down payment
+							<input type="checkbox" name="out_of_state" value="out_of_state" class="radio">Out-of-state resident
+							<input type="checkbox" name="married" value="married" class="radio">Married
+							<input type="checkbox" name="co_signer" value="co_signer" class="radio">Loan will be co-signed
+					</fieldset>
+				</fieldset>
+				<fieldset>
+					<legend>Any Additional Comments or Info</legend>
+						<textarea></textarea>
+
+				</fieldset>
+
+				<input type="submit" name="submit" value="Submit" id="submit">
+
+			</form>
+		</div>
+	</body>
+</html>
